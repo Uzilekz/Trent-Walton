@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox practica</title>
+    <title>Trent Walton (Imitacion)</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,95 +13,131 @@
     <div class="container">
       <!-- Header -->
       <header class="header">
-        <div class="header__menu">
-          <div class="header__menu__logo">
-            <a class="header__menu__logo__link" href="/"><img class="header__menu__logo__img" src="img/logo.png" alt=""></a>
-          </div>
-          <nav class="header__menu__nav">
-            <a class="header__menu__nav__link" href="#"><i class="fa fa-home"></i><span class="header__menu__nav__link--off">INICIO</span></a>
-            <a class="header__menu__nav__link" href="#"><i class="fa fa-user"></i><span class="header__menu__nav__link--off">NOSOTROS</span></a>
-            <a class="header__menu__nav__link" href="#"><i class="fa fa-comments"></i><span class="header__menu__nav__link--off">SERVICIOS</span></a>
-            <a class="header__menu__nav__link" href="#"><i class="fa fa-file"></i><span class="header__menu__nav__link--off">NOTICIAS</span></a>
-            <a class="header__menu__nav__link" href="#"><i class="fa fa-envelope"></i><span class="header__menu__nav__link--off">CONTACTO</span></a>
-          </nav>
-          <div class="header__menu__social">
-            <div class="header__menu__social__logo">
-              <a class="header__menu__social__logo__link" href="#"><i class="fab fa-facebook"></i></a>
-            </div>
-            <div class="header__menu__social__logo">
-              <a class="header__menu__social__logo__link" href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-          </div>
+        <!-- Header__Logo -->
+        <div class="header__logo">
+          <a class="header__logo__link" href="/">Tw</a>
         </div>
-        <div class="header__principal">
-          <h1 class="header__principal__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam non expedita, veniam provident nemo nobis eos ea, quas exercitationem quisquam? Harum, nam dicta! Accusantium animi commodi delectus hic, tempora deleniti sint totam cum magnam, nihil itaque perspiciatis aliquid vero possimus officia? Nostrum velit, repellendus atque maxime labore esse praesentium!</h1>
-        </div>
+        <!-- Header__Nav -->
+        <nav class="header__nav">
+          <a class="header__nav__link" href="#">NOTES</a>
+          <a class="header__nav__link" href="#">ARTICLES</a>
+          <a class="header__nav__link" href="#">INFO</a>
+          <a class="header__nav__link" href="#">SEARCH</a>
+        </nav>
       </header>
 
-      <!-- Section -->
-      <section class="section">
-        <!-- Articles -->
-        <div class="section__articles">
-          <article class="section__articles__article">
-            <img class="section__articles__article__img" src="img/img-1.jpg" alt="">
-            <p class="section__articles__article__date">29 de diciembre 2021</p>
-            <h2 class="section__articles__article__title">Titulo de la noticia</h2>
-            <p class="section__articles__article__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum necessitatibus veritatis hic exercitationem ea eaque ipsa obcaecati, magnam culpa facilis!</p>
-            <a class="section__articles__article__link" href="#">Leer mas...</a>
-          </article>
-          <article class="section__articles__article">
-            <img class="section__articles__article__img" src="img/img-1.jpg" alt="">
-            <p class="section__articles__article__date">29 de diciembre 2021</p>
-            <h2 class="section__articles__article__title">Titulo de la noticia</h2>
-            <p class="section__articles__article__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum necessitatibus veritatis hic exercitationem ea eaque ipsa obcaecati, magnam culpa facilis!</p>
-            <a class="section__articles__article__link" href="#">Leer mas...</a>
-          </article>
-          <article class="section__articles__article">
-            <img class="section__articles__article__img" src="img/img-1.jpg" alt="">
-            <p class="section__articles__article__date">29 de diciembre 2021</p>
-            <h2 class="section__articles__article__title">Titulo de la noticia</h2>
-            <p class="section__articles__article__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum necessitatibus veritatis hic exercitationem ea eaque ipsa obcaecati, magnam culpa facilis!</p>
-            <a class="section__articles__article__link" href="#">Leer mas...</a>
-          </article>
-          <article class="section__articles__article">
-            <img class="section__articles__article__img" src="img/img-1.jpg" alt="">
-            <p class="section__articles__article__date">29 de diciembre 2021</p>
-            <h2 class="section__articles__article__title">Titulo de la noticia</h2>
-            <p class="section__articles__article__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum necessitatibus veritatis hic exercitationem ea eaque ipsa obcaecati, magnam culpa facilis!</p>
-            <a class="section__articles__article__link" href="#">Leer mas...</a>
-          </article>
-          <nav class="section__articles__nav">
-            <a class="section__articles__nav__link" href="/">Inicio</a>
-            <a class="section__articles__nav__link" href="#">1</a>
-            <a class="section__articles__nav__link" href="#">2</a>
-            <a class="section__articles__nav__link" href="#">3</a>
-            <a class="section__articles__nav__link" href="#">4</a>
-            <a class="section__articles__nav__link" href="#">Final</a>
-          </nav>
-        </div>
+      <!-- Main -->
+      <main class="main">
+        <article class="main__article">
+          <!-- Main__Article__Title -->
+          <h1 class="main__article__title">I’m a designer & web builder who works with my friends at Paravel.</h1>
+          <!-- Main__Article__Title__Links -->
+          <div class="main__article__title__links">
+            <a href="#" class="main__article__title__links__link">Twitter</a> / 
+            <a href="#" class="main__article__title__links__link">Dribbble</a> / 
+            <a href="#" class="main__article__title__links__link">Instagram</a> / 
+            <a href="#" class="main__article__title__links__link">Spotify</a> / 
+            <a href="#" class="main__article__title__links__link">Codepen</a> / 
+            <a href="#" class="main__article__title__links__link">GitHub</a> / 
+            <a href="#" class="main__article__title__links__link">Letterboxd</a> / 
+            <a href="#" class="main__article__title__links__link">DayTrip</a>
+          </div>
+          <!-- Main__Article__Section -->
+          <section class="main__article__section">
+            <div class="main__article__section__img">
+              <img src="img/img-1.jpg" alt="">
+            </div>
+            <div class="main__article__section__txt">
+              <p class="main__article__section__txt__text">Voyager is out! <a class="main__article__section__txt__text__link" href="#">Listen on Spotify</a>, <a class="main__article__section__txt__text__link" href="#">Apple Music</a>, <a class="main__article__section__txt__text__link" href="#">Bandcamp</a>, or most anywhere you like to stream music.</p>
+            </div>
+          </section>
 
-        <!-- Aside -->
-        <aside class="section__aside">
-          <div class="section__aside__publicity">
-            <h4 class="section__aside__publicity__title">Aside</h4>
-            <img class="section__aside__publicity__img" src="img/img-1.jpg" alt="">
+          <section class="main__article__section">
+            <div class="main__article__section__img">
+              <img src="img/img-2.jpg" alt="">
+            </div>
+            <div class="main__article__section__txt">
+              <p class="main__article__section__txt__text">I am transferring my font-shopping bookmarks to a webpage so you can see them too. <a class="main__article__section__txt__text__link" href="#">Browse by display, sans, and serif fonts here</a>.</p>
+            </div>
+          </section>
+
+          <section class="main__article__section">
+            <div class="main__article__section__img">
+              <img src="img/img-3.jpg" alt="">
+            </div>
+            <div class="main__article__section__txt">
+              <p class="main__article__section__txt__text">We shipped <a class="main__article__section__txt__text__link" href="#">Sherlock Holmes: A Scandal in Bohemia</a> in an immersive-responsive-website-book-thingy format.</p>
+            </div>
+          </section>
+
+          <section class="main__article__section">
+            <div class="main__article__section__img">
+              <img src="img/img-4.jpg" alt="">
+            </div>
+            <div class="main__article__section__txt">
+              <p class="main__article__section__txt__text">We recently updated <a class="main__article__section__txt__text__link" href="#">paravelinc.com</a> with a services section that includes pages about <a class="main__article__section__txt__text__link" href="#">design systems</a> and <a class="main__article__section__txt__text__link" href="#">prototypes</a>. Read more about it <a class="main__article__section__txt__text__link" href="#">here</a>.</p>
+            </div>
+          </section>
+
+          <section class="main__article__section">
+            <div class="main__article__section__img">
+              <img src="img/img-5.jpg" alt="">
+            </div>
+            <div class="main__article__section__txt">
+              <p class="main__article__section__txt__text">Near and dear to our hearts, <a class="main__article__section__txt__text__link" href="#">DayTrip</a> is a Paravel project designed to make it easy to find something great to do and someplace great to go. Austin/Texas area private beta out now.</p>
+            </div>
+          </section>
+
+          <section class="main__article__section">
+            <div class="main__article__section__img">
+              <img src="img/img-6.jpg" alt="">
+            </div>
+            <div class="main__article__section__txt">
+              <p class="main__article__section__txt__text">We published two new <a class="main__article__section__txt__text__link" href="#">TMFO</a> posts. One for <a class="main__article__section__txt__text__link" href="#">Burt Reynolds</a>, and another one called <a class="main__article__section__txt__text__link" href="#">Punch Dancing</a>.</p>
+            </div>
+          </section>
+
+          <section class="main__article__section">
+            <div class="main__article__section__img">
+              <img src="img/img-7.jpg" alt="">
+            </div>
+            <div class="main__article__section__txt">
+              <p class="main__article__section__txt__text"><a class="main__article__section__txt__text__link" href="#">Device Agnostic</a> summarizes how I view and approach building for the web. My perception has been shaped while working on responsive, component-based systems on a large-ish scale.</p>
+            </div>
+          </section>
+
+          <section class="main__article__section">
+            <div class="main__article__section__img">
+              <img src="img/img-8.jpg" alt="">
+            </div>
+            <div class="main__article__section__txt">
+              <p class="main__article__section__txt__text">I was thrilled that <a class="main__article__section__txt__text__link" href="#">Typekit</a> and <a class="main__article__section__txt__text__link" href="#">Dave Shea</a> asked me to contribute a theme to <a class="main__article__section__txt__text__link" href="#">CSS Zen Garden</a> to celebrate its recent responsive update. Read about the process <a class="main__article__section__txt__text__link" href="#">here</a> and <a class="main__article__section__txt__text__link" href="#">here</a>.</p>
+            </div>
+          </section>
+
+          <!-- Main__Article__More -->
+          <div class="main__article__more">
+            <p class="main__article__more__txt">More: <a class="main__article__more__txt__link" href="#">Info</a>, <a class="main__article__more__txt__link" href="#">Notes</a>, or <a class="main__article__more__txt__link" href="#">Articles</a></p>
           </div>
-          <div class="section__aside__publicity">
-            <h4 class="section__aside__publicity__title">Aside</h4>
-            <img class="section__aside__publicity__img" src="img/img-1.jpg" alt="">
-          </div>
-          <div class="section__aside__publicity">
-            <h4 class="section__aside__publicity__title">Aside</h4>
-            <img class="section__aside__publicity__img" src="img/img-1.jpg" alt="">
-          </div>
-        </aside>
-      </section>
+        </article>
+      </main>
 
       <!-- Footer -->
       <footer class="footer">
-        <nav class="footer__nav">
-          <a class="footer__nav__link" href="#">Desarrollado por Uzilekz | Todos los derechos reservados</a>
-        </nav>
+        <!-- Footer__Social -->
+        <div class="footer__social">
+          <a class="footer__social__link" href="#"><i class="fab fa-twitter"></i> FOLLOW ME ON TWITTER</a>
+        </div>
+        <!-- Footer__Contact -->
+        <div class="footer__contact">
+          <div class="footer__contact__links">
+            <a href="#" class="footer__contact__links__link"><i class="fas fa-money-bill-wave"></i> HIRE PARAVEL</a>
+          </div>
+
+          <div class="footer__contact__links">
+            <a href="#" class="footer__contact__links__link"><i class="fas fa-satellite-dish"></i> RSS FEED</a>
+          </div>
+        </div>
       </footer>
     </div>
   </body>

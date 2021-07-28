@@ -1,299 +1,34 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
 /* ---------- Fonts ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+@font-face {
+  font-family: "Lobster";
+  src: url(../fonts/Lobster-Regular.ttf);
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url(../fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: lighter;
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: bold;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
 
+/* ---------- All --------- */
 body {
-  font-family: "Montserrat", sans-serif;
+  background: rgb(253, 253, 253);
+  font-family: "Open Sans", serif;
+  font-weight: lighter;
 }
 
-/* ----------- Header ---------- */
-.header {
-  background: url(../img/banner.jpg);
-  background-position: center;
-  background-attachment: contain;
-  background-size: cover;
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-/* ----------- Header__Menu ---------- */
-.header__menu {
-  background: rgba(0, 0, 0, .4);
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  height: 60px;
-  border-bottom: 1px solid rgba(255, 255, 255, .5);
-  padding: 0 50px;
-}
-
-.header__menu__logo__img {
-  flex: 1 1 auto;
-  width: 70px;
-  margin-top: 35px;
-}
-
-/* ----------- Header__Menu__Nav ---------- */
-.header__menu__nav {
-  flex: 5 1 auto;
-}
-
-.header__menu__nav__link {
-  text-decoration: none;
-  color: #fff;
-  font-size: 0.8em;
-  padding: 0 20px;
-  margin: 10px;
-  margin-left: 30px;
-  letter-spacing: 2px;
-}
-
-.header__menu__nav__link:hover {
-  color: #4b4b4b;
-}
-
-/* ----------- Header__Menu__Social ---------- */
-.header__menu__social {
-  flex: 1 1 auto;
-  display: flex;
-}
-
-.header__menu__social__logo__link {
-  color: rgb(255, 255, 255);
-  font-size: 1.2em;
-  margin-top: 10px;
-  padding: 0 10px;
-}
-
-.header__menu__social__logo__link:hover {
-  color: #4b4b4b;
-}
-
-/* ----------- Header__Principal ---------- */
-.header__principal {
-  height: 800px;
-  display: flex;
-  align-items: center;
-  padding: 0 50px;
-}
-
-.header__principal__txt {
-  font: 1.6em/1.6 "Lora", serif;
-  color: #fff;
-  font-weight: 300;
-  text-align: center;
-}
-
-/* ----------- Section ---------- */
-.section {
-  background: #f7f7f7;
-  display: flex;
-  padding: 0 50px;
-}
-
-/* ---------- Section__Articles ---------- */
-.section__articles {
-  background: #f7f7f7;
-  flex: 2 1 auto;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.section__articles__article {
-  flex: 1 1 45%;
-  color: #444;
-  font-size: .9em;
-  letter-spacing: 1px;
-  margin: 10px 10px 0 0;
-  background: #ececec;
-}
-
-.section__articles__article__img {
-  width: 100%;
-}
-
-.section__articles__article__date {
-  color: #fff;
-  font-size: .9em;
-  padding: 0 10px;
-  margin-top: -70px;
-}
-
-.section__articles__article__title {
-  color: #fff;
-  font-size: 1.7em;
-  text-transform: uppercase;
-  padding: 10px 10px;
-  margin: 10px 0;
-}
-
-.section__articles__article__txt {
-  padding: 0 10px;
-  margin: 10px 0;
-}
-
-.section__articles__article__link {
-  color: #fff;
-  font-size: .9em;
-  padding: 10px;
-  background: #000;
-  margin: 10px 0;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.section__articles__article__link:hover {
-  background: #546cc3;
-}
-
-.section__articles__nav {
-  background: #000;
-  flex: 1 1 100%;
-  margin: 10px 10px 0 0;
-  padding: 5px;
-}
-
-.section__articles__nav__link {
-  text-decoration: none;
-  color: #fff;
-  font-size: .8em;
-  text-transform: uppercase;
-  padding: 0 10px;
-  letter-spacing: 2px;
-}
-
-/* ---------- Section__Aside --------- */
-.section__aside {
-  flex: 1 1 100%;
-  margin: 10px 5px 10px 0;
-}
-
-.section__aside__publicity {
-  margin: 0 0 10px 0;
-}
-
-.section__aside__publicity__title {
-  background: #000;
-  color: #fff;
-  padding: 10px;
-  text-transform: uppercase;
-  border-bottom: 1px solid rgba(255, 255, 255, .5);
-}
-
-/* ----------- Footer ---------- */
-.footer {
-  background: #000;
-  display: flex;
-  justify-content: center;
-  padding: 30px 50px;
-  margin-top: 10px;
-}
-
-.footer__nav {
-  text-align: center;
-}
-
-.footer__nav__link {
-  text-decoration: none;
-  color: #fff;
-  font-size: .9em;
-  text-transform: uppercase;
-  padding: 0 10px;
-  letter-spacing: 2px;
-}
-
-/* ---------- Responsive --------- */
-@media screen and (max-width: 1250px) {
-  .header__menu {
-    flex-direction: column;
-    height: auto;
-  }
-  .header__menu__logo__img {
-    margin-top: 15px;
-  }
-  .header__menu__nav {
-    margin: 30px 0 10px 0;
-  }
-  .header__menu__nav__link {
-    margin: 10px;
-  }
-  .header__menu__social {
-    margin: 20px;
-  }
-  .header__principal {
-    height: 650px;
-  }
-  .header__principal__txt {
-    font-size: 1.3em;
-  }
-  .section {
-    flex-direction: column;
-  }
-  .section__aside {
-    display: flex;
-    justify-content: center;
-  }
-  .section__aside__publicity {
-    margin-right: 5px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .header__menu__nav__link {
-    margin: 0;
-  }
-  .header__principal__txt {
-    font-size: 1.2em;
-  }
-  .section__articles__article__title {
-    font-size: 1.4em;
-  }
-}
-
-@media screen and (max-width: 830px) {
-  .header__menu__nav {
-    font-size: 25px;
-  }
-  .header__menu__nav__link--off {
-    display: none;
-  }
-  .section__articles__article__title {
-    font-size: 1.2em;
-  }
-  .footer__nav__link {
-    font-size: .8em;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .section__articles__article__title {
-    font-size: 1em;
-  }
-}
-@media screen and (max-width: 500px) {
-  .header__menu__nav__link {
-    padding: 10px;
-    font-size: .8em;
-  }
-  .header__principal__txt {
-    font-size: 1.1em;
-  }
-  .section__articles {
-    flex-direction: column;
-  }
-  .section__articles__article__title {
-    font-size: 1.2em;
-  }
-  .section__aside {
-    flex-direction: column;
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bebas Neue";
 }
