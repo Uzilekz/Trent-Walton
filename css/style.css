@@ -212,3 +212,127 @@ a:hover {
 .footer [class*="fa-"] {
   color: rgb(191, 191, 191);
 }
+
+/* ---------- Responsive --------- */
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 80%;
+  }
+  .main__article__title__txt {
+    font-size: 3.8em;
+  }
+  .main__article__title__links {
+    font-size: 1.1em;
+  }
+  .main__article__section__txt__text {
+    font-size: 1.1em;
+  }
+  .main__article__more__txt {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__logo {
+    width: 60px;
+    height: 60px;
+  }
+  .header__logo__link {
+    font-size: 2.3em;
+  }
+  .main__article__title__txt {
+    font-size: 2.8em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    border-bottom: 1px solid rgba(146, 146, 146, 0.5);
+  }
+  .header__nav__link {
+    font-size: 1em;
+  }
+  .container {
+    width: 85%;
+  }
+  .main__article__title__links {
+    font-size: 1.1em;
+  }
+  .main__article__section__txt__text {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  .main__article__more {
+    margin-top: 25px;
+    margin-bottom: 100px;
+  }
+  .main__article__more__txt {
+    font-size: 1em;
+  }
+  .footer {
+    font-size: 1em;
+
+    flex-direction: column;
+  }
+  .footer__contact {
+    flex-direction: column;
+  }
+  .footer__contact__links {
+    margin: 0;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    width: 85%;
+  }
+  .main__article__title__txt {
+    font-size: 2.5em;
+  }
+  .main__article__section {
+    flex-direction: column;
+  }
+  .main__article__section__img {
+    width: 100%;
+  }
+  .main__article__section__txt {
+    margin-left: 0;
+  }
+  .main__article__section__txt__text {
+    font-size: 1.1em;
+  }
+  .main__article__more__txt {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .header__logo {
+    width: 50px;
+    height: 50px;
+  }
+  .header__logo__link {
+    font-size: 1.9em;
+  }
+  .header__nav {
+    margin-top: 20px;
+  }
+  .header__nav__link {
+    padding: 0 5px;
+    font-size: 1em;
+  }
+  .main__article__title__txt {
+    font-size: 2.3em;
+  }
+  .main__article__title__links {
+    font-size: 1em;
+  }
+  .main__article__section__txt__text {
+    line-height: 1.8;
+  }
+}
