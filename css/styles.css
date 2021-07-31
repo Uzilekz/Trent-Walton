@@ -1,3 +1,5 @@
+
+
 /* ---------- Fonts ---------- */
 @font-face {
   font-family: "Lobster";
@@ -113,82 +115,6 @@ a:hover {
   width: 63%;
 }
 
-/* ---------- Main__Title --------- */
-.main__article__title {
-  border-bottom: 1px solid rgba(146, 146, 146, 0.5);
-
-  display: flex;
-  flex-direction: column;
-  flex: 100%;
-}
-
-.main__article__title__txt {
-  margin: 0;
-  font-size: 4.8em;
-  letter-spacing: 3px;
-  line-height: 1.25;
-}
-
-.main__article__title__links {
-  margin: 20px 0 50px 0;
-  font-size: 1.4em;
-}
-
-/* ---------- Main__Article__Section --------- */
-.main__article__section {
-  padding: 5% 0;
-  border-bottom: 1px solid rgba(146, 146, 146, 0.5);
-
-  display: flex;
-}
-
-/* ---------- Main__Article__Section__Img --------- */
-.main__article__section__img {
-  width: 40%;
-}
-
-.main__article__section__img__image {
-  cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.3s ease-out;
-}
-
-.main__article__section__img__image:hover {  
-  opacity: 0.8;
-  transform: scale(1.01);
-  transition: all 0.2s ease-out;
-}
-
-/* ---------- Main__Article__Section__Txt --------- */
-.main__article__section__txt {
-  margin-left: 5%;
-
-  display: flex;
-  flex: 60%;
-  align-items: center;
-}
-
-.main__article__section__txt__text {
-  font-size: 1.3em;
-  letter-spacing: 1px;
-  line-height: 2;
-}
-
-.main__article__section__txt__text__link {
-  text-decoration: underline;
-}
-
-/* ---------- Main__Article__More --------- */
-.main__article__more {
-  margin-top: 50px;
-  margin-bottom: 150px;
-}
-
-.main__article__more__txt {
-  font-size: 1.3em;
-  letter-spacing: 1px;
-}
-
 /* ---------- Footer --------- */
 .footer {
   padding: 30px;
@@ -218,18 +144,6 @@ a:hover {
   .container {
     width: 80%;
   }
-  .main__article__title__txt {
-    font-size: 3.8em;
-  }
-  .main__article__title__links {
-    font-size: 1.1em;
-  }
-  .main__article__section__txt__text {
-    font-size: 1.1em;
-  }
-  .main__article__more__txt {
-    font-size: 1.1em;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -239,9 +153,6 @@ a:hover {
   }
   .header__logo__link {
     font-size: 2.3em;
-  }
-  .main__article__title__txt {
-    font-size: 2.8em;
   }
 }
 
@@ -254,20 +165,6 @@ a:hover {
   }
   .container {
     width: 85%;
-  }
-  .main__article__title__links {
-    font-size: 1.1em;
-  }
-  .main__article__section__txt__text {
-    font-size: 1em;
-    line-height: 1.5;
-  }
-  .main__article__more {
-    margin-top: 25px;
-    margin-bottom: 100px;
-  }
-  .main__article__more__txt {
-    font-size: 1em;
   }
   .footer {
     font-size: 1em;
@@ -286,24 +183,6 @@ a:hover {
 @media screen and (max-width: 680px) {
   .container {
     width: 85%;
-  }
-  .main__article__title__txt {
-    font-size: 2.5em;
-  }
-  .main__article__section {
-    flex-direction: column;
-  }
-  .main__article__section__img {
-    width: 100%;
-  }
-  .main__article__section__txt {
-    margin-left: 0;
-  }
-  .main__article__section__txt__text {
-    font-size: 1.1em;
-  }
-  .main__article__more__txt {
-    font-size: 1.1em;
   }
 }
 
@@ -325,14 +204,5 @@ a:hover {
   .header__nav__link {
     padding: 0 5px;
     font-size: 1em;
-  }
-  .main__article__title__txt {
-    font-size: 2.3em;
-  }
-  .main__article__title__links {
-    font-size: 1em;
-  }
-  .main__article__section__txt__text {
-    line-height: 1.8;
   }
 }
