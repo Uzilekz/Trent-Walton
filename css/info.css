@@ -9,7 +9,7 @@
 }
 
 .main__article__principal-title__image {
-  width: 45%;
+  flex: 45%;
 }
 
 .main__article__principal-title__image__img {
@@ -73,7 +73,8 @@
 }
 
 .main__article__music__song {
-  margin-right: 15px;
+  margin-right: 20px;
+  margin-bottom: 30px;
 }
 
 .main__article__music__song__img {
@@ -118,4 +119,132 @@
   margin-bottom: 30px;
   list-style: none;
   font-size: 1.1em;
+}
+
+/* ---------- Responsive ---------- */
+@media screen and (max-width: 1410px) {
+  .container {
+    width: 90%;
+  }
+  .main__article__principal-title__text__principal-txt {
+    font-size: 3em;
+  }
+  .main__article__principal-title__text__txt {
+    font-size: 1.1em;
+  }
+  .main__article__social__text__txt {
+    font-size: 3em;
+  }
+  .main__article__social__links {
+    font-size: 1.3em;
+  }
+  .main__article__music__title {
+    font-size: 3em;
+  }
+  .main__article__others__info__title {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main__article__principal-title__text__principal-txt {
+    font-size: 2.3em;
+  }
+  .main__article__principal-title__text__txt {
+    line-height: 1.5;
+  }
+  .main__article__social__text__txt {
+    font-size: 2.3em;
+  }
+  .main__article__social__links {
+    font-size: 1.2em;
+  }
+  .main__article__music__title {
+    font-size: 2.3em;
+  }
+  .main__article__music {
+    flex-wrap: wrap;
+  }
+  .main__article__music__song {
+    width: 30%;
+  }
+  .main__article__music__song__txt {
+    font-size: .9em;
+  }
+  .main__article__others {
+    flex-wrap: wrap;
+    flex: 50%;
+  }
+  .main__article__others__info__title {
+    font-size: 2.3em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .main__article__principal-title {
+    flex-direction: column;
+  }
+  .main__article__principal-title__image__img {
+    border-radius: 15px 15px 0 0;
+  }
+  .main__article__principal-title__text {
+    padding: 0 5%;
+    border: 1px solid rgba(146, 146, 146, 0.5);
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+  }
+  .main__article__principal-title__text__principal-txt {
+    font-size: 2.7em;
+  }
+  .main__article__social {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+  .main__article__social__text__txt {
+    font-size: 2.7em;
+  }
+  .main__article__social__links {
+    font-size: 1.2em;
+  }
+  .main__article__music__title {
+    font-size: 2.7em;
+  }
+  .main__article__music__song__title {
+    margin-top: 5px;
+    font-size: 1.4em;
+  }
+  .main__article__music__song__txt {
+    font-size: 1.1em;
+    line-height: 1.2;
+  }
+  .main__article__others__info__title {
+    font-size: 2.7em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main__article__principal-title__text__principal-txt {
+    font-size: 2.5em;
+  }
+  .main__article__music__song {
+    margin-right: 0;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(146, 146, 146, 0.5);
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 100%;
+  }
+  .main__article__music__song:last-child {
+    border-bottom: none;
+  }
+  .main__article__music__song__title {
+    font-size: 1.6em;
+  }
+  .main__article__others {
+    margin-left: -40px;
+  }
 }
